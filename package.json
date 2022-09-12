@@ -1,0 +1,19 @@
+{
+  "name": "platzitravel",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000P\u0000l\u0000a\u0000t\u0000z\u0000i\u0000T\u0000r\u0000a\u0000v\u0000e\u0000l\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarado0925/PlatziTravel.git"
+  },
+  "author": "Andrés Perdomo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarado0925/PlatziTravel/issues"
+  },
+  "homepage": "https://github.com/alvarado0925/PlatziTravel#readme"
+}
