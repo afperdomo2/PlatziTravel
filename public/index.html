@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Platzi Travel</title>
 </head>
-<body>
+<body class="font-montserrat">
     <nav></nav>
 
     <div id="tab_bar"></div>
@@ -19,12 +19,8 @@
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col items-center absolute space-y-96 py-4">
-                    <input
-                        class="outline-none p-3 pl-5 rounded-full shadow-sm"
-                        type="search"
-                        placeholder="San Francisco"
-                    >
-                    <button class="w-36 bg-white shadow-sm rounded-full p-4 font-semibold text-xl text-primary">
+                    <input class="input-search" type="search" placeholder="San Francisco">
+                    <button class="btn-explorer">
                         Explorar
                     </button>
                 </div>
@@ -37,7 +33,7 @@
         <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary">Recomendados</p>
 
-            <div class="w-auto h-72 items-center mt-1 overflow-x-auto overscroll-x-contain flex space-x-4">
+            <div class="w-auto h-72 items-center mt-1 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-4">
                 <div class="card">
                     <div class="card-image bg-norway"></div>
                     <div class="card-text bg-secondary text-white">
