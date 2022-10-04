@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
     <title>Platzi Travel</title>
 </head>
 <body class="font-montserrat">
     <nav></nav>
-
-    <div id="tab_bar"></div>
 
     <section class="w-full h-screen">
         <div id="home">
@@ -116,7 +121,7 @@
             </div>
         </div>
 
-        <footer class="w-full h-auto bg-gray-50 p-6 space-y-2">
+        <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 pb-20">
             <p class="text-lg">Acerca de</p>
             <p class="text-sm text-gray-300">Inversionistas</p>
             <p class="text-sm text-gray-300">SEO</p>
@@ -125,5 +130,26 @@
             <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
         </footer>
     </section>
+
+    <div
+        class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0"
+        id="tab_bar"
+    >
+        <a href="#home">
+            <i class="fa-solid fa-house text-3xl text-primary"></i>
+        </a>
+        <a href="#recomendados">
+            <i class="fa-solid fa-heart text-4xl text-gray-200"></i>
+        </a>
+        <a href="#rentas_destacadas">
+            <i class="fa-solid fa-magnifying-glass text-4xl text-gray-300"></i>
+        </a>
+        <button>
+            <i class="fa-solid fa-moon text-4xl text-gray-200"></i>
+        </button>
+        <a href="#home">
+            <i class="fa-solid fa-user text-4xl text-gray-200"></i>
+        </a>
+    </div>
 </body>
 </html>
