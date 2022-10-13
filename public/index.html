@@ -23,14 +23,19 @@
     <section class="w-full h-screen">
         <div id="home">
             <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col items-center absolute space-y-96 py-4">
-                    <input class="input-search" type="search" placeholder="San Francisco">
-                    <button class="btn-explorer">
+                <div class="w-full h-full flex flex-col items-center absolute space-y-96 py-4 lg:space-y-0 lg:items-start lg:pt-36 lg:justify-start">
+                    <input class="input-search lg:hidden" type="search" placeholder="San Francisco">
+                    <div class="hidden h-auto pb-6 lg:w-2/5 lg:flex">
+                        <p class="text-3xl ml-16 font-bold text-black drop-shadow-xl shadow-white">
+                            Encuentra más ubicaciones como esta
+                        </p>
+                    </div>
+                    <button class="btn-explorer lg:ml-16">
                         Explorar
                     </button>
                 </div>
-                <div class="w-full h-full">
-                    <img src="./img/sanFrancisco.jpg">
+                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg">
                 </div>
             </div>
         </div>
@@ -64,31 +69,86 @@
                 </div>
 
                 <div class="card">
+                    <div class="card-image bg-yosemite"></div>
+                    <div class="card-text bg-white text-tertiary">
+                        <p class="card-title">Yosemite</p>
+                        <p class="card-subtitle">Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image bg-seattle"></div>
+                    <div class="card-text bg-secondary text-white">
+                        <p class="card-title">Seattle</p>
+                        <p class="card-subtitle">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image bg-europe"></div>
+                    <div class="card-text bg-white text-tertiary">
+                        <p class="card-title">Europa</p>
+                        <p class="card-subtitle">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image bg-iceland"></div>
+                    <div class="card-text bg-secondary text-white">
+                        <p class="card-title">Islandia</p>
+                        <p class="card-subtitle">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
                     <div class="card-image bg-chicago"></div>
                     <div class="card-text bg-white text-tertiary">
                         <p class="card-title">Chicago</p>
-                        <p class="card-subtitle">Paisajes increibles</p>
+                        <p class="card-subtitle">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image bg-bali"></div>
+                    <div class="card-text bg-secondary text-white">
+                        <p class="card-title">Bali</p>
+                        <p class="card-subtitle">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image bg-switzerland"></div>
+                    <div class="card-text bg-white text-tertiary">
+                        <p class="card-title">Suiza</p>
+                        <p class="card-subtitle">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="w-full h-full pt-2 pb-10 px-6" id="rentas_destacadas">
+        <div class="w-full h-auto pt-2 pb-2 px-6 lg:px-6" id="rentas_destacadas">
             <p class="text-3xl font-semibold text-primary">Rentas Destacadas</p>
-            <div class="w-full h-full flex flex-col items-center justify-center space-y-5">
-                <div class="w-full h-96 bg-chicago bg-cover rounded-lg text-white">
-                    <p class="card-title">Chicago</p>
-                    <p class="card-subtitle">2 Habitaciones, baño y cocina</p>
+            <div class="w-full h-full flex flex-col items-center justify-center">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-lg text-white mb-8 lg:bg-center lg:text-black">
+                    <p class="card-title ">Chicago</p>
+                    <p class="card-subtitle lg:text-lg">2 Habitaciones, baño y cocina</p>
                 </div>
 
-                <div class="w-full h-96 bg-LA bg-cover rounded-lg text-white">
-                    <p class="card-title">Los Ángeles</p>
-                    <p class="card-subtitle">4 Habitaciones, 2 baños, cocina y alberca privada</p>
-                </div>
-
-                <div class="w-full h-96 bg-miami bg-cover rounded-lg text-white">
-                    <p class="card-title">Miami</p>
-                    <p class="card-subtitle">4 Habitaciones y un baño</p>
+                <div class="lg:flex lg:h-full lg:w-full lg:space-x-4">
+                    <div class="w-full h-96 bg-LA bg-cover rounded-lg text-white mb-8 lg:h-auto">
+                        <p class="card-title">Los Ángeles</p>
+                        <p class="card-subtitle lg:text-lg">4 Habitaciones, 2 baños, cocina y alberca privada</p>
+                    </div>
+                    <div class="h-full w-full">
+                        <div class="w-full h-96 bg-miami bg-cover rounded-lg text-white mb-8">
+                            <p class="card-title">Miami</p>
+                            <p class="card-subtitle lg:text-lg">4 Habitaciones y un baño</p>
+                        </div>
+                        <div class="w-full h-96 bg-bali bg-cover rounded-lg text-white mb-8">
+                            <p class="card-title">Bali</p>
+                            <p class="card-subtitle lg:text-lg">4 Habitaciones y un baño</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +192,7 @@
     </section>
 
     <div
-        class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0"
+        class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 lg:hidden"
         id="tab_bar"
     >
         <a href="#home">
