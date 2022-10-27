@@ -17,29 +17,29 @@
     >
     <title>Platzi Travel</title>
 </head>
-<body class="font-montserrat">
-    <nav class="w-full h-14 bg-white hidden lg:flex p-4 justify-between fixed z-50">
+<body class="font-montserrat dark:bg-gray-800">
+    <nav class="w-full h-14 bg-white hidden lg:flex p-4 justify-between fixed z-50 dark:bg-gray-800">
         <div class="h-auto w-auto">
-            <p class="text-xl text-primary font-black">
+            <p class="text-xl text-primary font-black dark:text-white">
                 Platzi Travel
             </p>
         </div>
-        <div class="flex space-x-8">
-            <a class="font-bold text-base text-primary" href="#home">Inicio</a>
-            <a class="font-bold text-base text-primary" href="#recomendados">Recomendados</a>
-            <a class="font-bold text-base text-primary" href="#rentas_destacadas">Rentas</a>
-            <a class="font-bold text-base text-primary" href="#faqs">FAQS</a>
-            <a class="font-bold text-base text-primary" href="#sobre_nosotros">Sobre Nosotros</a>
+        <div class="flex space-x-8 text-primary dark:text-white font-bold text-base">
+            <a href="#home">Inicio</a>
+            <a href="#recomendados">Recomendados</a>
+            <a href="#rentas_destacadas">Rentas</a>
+            <a href="#faqs">FAQS</a>
+            <a href="#sobre_nosotros">Sobre Nosotros</a>
         </div>
         <div class="flex space-x-4">
             <button>
-                <i class="fa-solid fa-magnifying-glass text-2xl text-primary"></i>
+                <i class="fa-solid fa-magnifying-glass text-xl text-primary"></i>
+            </button>
+            <button id="dark-mode-button">
+                <i class="fa-solid fa-moon text-xl text-gray-400 dark:text-primary"></i>
             </button>
             <button>
-                <i class="fa-solid fa-moon text-2xl text-primary"></i>
-            </button>
-            <button>
-                <i class="fa-solid fa-user text-2xl text-gray-400"></i>
+                <i class="fa-solid fa-user text-xl text-gray-400"></i>
             </button>
         </div>
     </nav>
@@ -65,12 +65,12 @@
         </div>
 
         <div class="p-6" id="recomendados">
-            <p class="text-3xl font-semibold text-primary">Recomendados</p>
+            <p class="text-3xl font-semibold text-primary dark:text-white">Recomendados</p>
 
             <div class="w-auto h-72 items-center mt-1 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-4">
                 <div class="card">
                     <div class="card-image bg-norway"></div>
-                    <div class="card-text bg-secondary text-white">
+                    <div class="card-text">
                         <p class="card-title">Norway</p>
                         <p class="card-subtitle">Paisajes increibles</p>
                     </div>
@@ -78,7 +78,7 @@
 
                 <div class="card">
                     <div class="card-image bg-new_york"></div>
-                    <div class="card-text bg-white text-tertiary">
+                    <div class="card-tex">
                         <p class="card-title">New York</p>
                         <p class="card-subtitle">Paisajes increibles</p>
                     </div>
@@ -86,7 +86,7 @@
 
                 <div class="card">
                     <div class="card-image bg-LA"></div>
-                    <div class="card-text bg-secondary text-white">
+                    <div class="card-text">
                         <p class="card-title">Los Angeles</p>
                         <p class="card-subtitle">Paisajes increibles</p>
                     </div>
@@ -94,7 +94,7 @@
 
                 <div class="card">
                     <div class="card-image bg-yosemite"></div>
-                    <div class="card-text bg-white text-tertiary">
+                    <div class="card-text">
                         <p class="card-title">Yosemite</p>
                         <p class="card-subtitle">Lorem, ipsum dolor.</p>
                     </div>
@@ -102,7 +102,7 @@
 
                 <div class="card">
                     <div class="card-image bg-seattle"></div>
-                    <div class="card-text bg-secondary text-white">
+                    <div class="card-text">
                         <p class="card-title">Seattle</p>
                         <p class="card-subtitle">Lorem ipsum dolor sit.</p>
                     </div>
@@ -110,7 +110,7 @@
 
                 <div class="card">
                     <div class="card-image bg-europe"></div>
-                    <div class="card-text bg-white text-tertiary">
+                    <div class="card-text">
                         <p class="card-title">Europa</p>
                         <p class="card-subtitle">Lorem ipsum dolor sit.</p>
                     </div>
@@ -118,7 +118,7 @@
 
                 <div class="card">
                     <div class="card-image bg-iceland"></div>
-                    <div class="card-text bg-secondary text-white">
+                    <div class="card-text">
                         <p class="card-title">Islandia</p>
                         <p class="card-subtitle">Lorem ipsum dolor sit.</p>
                     </div>
@@ -126,7 +126,7 @@
 
                 <div class="card">
                     <div class="card-image bg-chicago"></div>
-                    <div class="card-text bg-white text-tertiary">
+                    <div class="card-text">
                         <p class="card-title">Chicago</p>
                         <p class="card-subtitle">Lorem ipsum dolor sit.</p>
                     </div>
@@ -134,7 +134,7 @@
 
                 <div class="card">
                     <div class="card-image bg-bali"></div>
-                    <div class="card-text bg-secondary text-white">
+                    <div class="card-text">
                         <p class="card-title">Bali</p>
                         <p class="card-subtitle">Lorem ipsum dolor sit.</p>
                     </div>
@@ -142,7 +142,7 @@
 
                 <div class="card">
                     <div class="card-image bg-switzerland"></div>
-                    <div class="card-text bg-white text-tertiary">
+                    <div class="card-text">
                         <p class="card-title">Suiza</p>
                         <p class="card-subtitle">Lorem ipsum dolor sit.</p>
                     </div>
@@ -151,7 +151,7 @@
         </div>
 
         <div class="w-full h-auto pt-2 pb-2 px-6 lg:px-6" id="rentas_destacadas">
-            <p class="text-3xl font-semibold text-primary">Rentas Destacadas</p>
+            <p class="text-3xl font-semibold text-primary dark:text-white">Rentas Destacadas</p>
             <div class="w-full h-full flex flex-col items-center justify-center">
                 <div class="w-full h-96 bg-chicago bg-cover rounded-lg text-white mb-8 lg:bg-center lg:text-black">
                     <p class="card-title ">Chicago</p>
@@ -178,10 +178,10 @@
         </div>
 
         <div class="w-full h-auto pt-2 pb-4" id="faqs">
-            <div class="w-full h-full px-6 flex flex-col space-y-4">
-                <p class="text-3xl font-semibold text-primary mt-6">FAQS</p>
+            <div class="w-full h-full px-6 flex flex-col space-y-4 dark:text-white">
+                <p class="text-3xl font-semibold text-primary mt-6 dark:text-white">FAQS</p>
                 <div>
-                    <p class="text-xl font-medium text-primary">
+                    <p class="text-xl font-medium text-primary dark:text-white">
                         Política de pagos
                     </p>
                     <p class="text-base pt-2">
@@ -189,7 +189,7 @@
                     </p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">
+                    <p class="text-xl font-medium text-primary dark:text-white">
                         Política de cancelación
                     </p>
                     <p class="text-base pt-2">
@@ -216,7 +216,7 @@
     </section>
 
     <div
-        class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 lg:hidden"
+        class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 lg:hidden dark:bg-gray-700"
         id="tab_bar"
     >
         <a href="#home">
@@ -228,12 +228,26 @@
         <a href="#rentas_destacadas">
             <i class="fa-solid fa-magnifying-glass text-4xl text-gray-300"></i>
         </a>
-        <button>
+        <button id="dark-mode-button-sm">
             <i class="fa-solid fa-moon text-4xl text-gray-200"></i>
         </button>
         <a href="#home">
             <i class="fa-solid fa-user text-4xl text-gray-200"></i>
         </a>
     </div>
+    <script>
+        const htmlElement = document.querySelector('html');
+        const darkModeButton = document.querySelector('#dark-mode-button');
+        const darkModeButtonSm = document.querySelector('#dark-mode-button-sm');
+
+        darkModeButton.addEventListener('click', () => toggleDarkMode());
+        darkModeButtonSm.addEventListener('click', () => toggleDarkMode());
+
+        const toggleDarkMode = () => {
+            htmlElement.classList.contains('dark')
+                ? htmlElement.classList.remove('dark')
+                : htmlElement.classList.add('dark');
+        }
+    </script>
 </body>
 </html>

@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.card {
-    @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+.card-base {
+    @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl dark:text-white;
+}
+.card:nth-child(odd) {
+    @apply card-base bg-secondary text-white dark:bg-gray-700;
+}
+.card:nth-child(even) {
+    @apply card-base bg-white text-tertiary dark:bg-gray-800;
 }
 .card-image {
     @apply w-full h-2/3 rounded-t-lg  bg-cover;
